@@ -1,0 +1,78 @@
+html {
+    background: url("images/pexels-lisa-730256.jpg") no-repeat center center
+      fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  
+  h1 {
+    color: white;
+    margin: 3em auto;
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 15em 0 22em;
+    width: 50%;
+    padding: 1em;
+  }
+  
+  .numbers {
+    font-size: 8rem;
+    color: white;
+    width: 30%;
+    text-align: center;
+  }
+  
+  .title {
+    width: 30%;
+    margin-left: 33em;
+  }
+  
+  .opacity {
+    background-color: #101b16;
+    opacity: 0.9;
+  }
+
+  /* @media screen and (max-width: 675px) {
+
+    .container {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .numbers {
+      width: 100%;
+    }
+
+    .title {
+      width: 100%;
+    }
+  } */
+
+  @media screen and (min-width: 1900px) {
+      .title {
+        margin-left: 40em;
+      }
+
+      .container {
+        margin-left: 27em;
+      }
+  }
+  

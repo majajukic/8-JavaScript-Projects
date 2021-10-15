@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!--Css-->
+    <link rel="stylesheet" href="styles.css">
+    <!--JavaScript-->
+    <script src="index.js" defer></script>
+    <title>Best Friend Quiz</title>
+</head>
+<body>
+    <h1>Best Friend Quiz</h1>
+    <div class="container" id="result">
+        <form>
+            <p class="questionText">Question?</p>
+                <div class="question">
+                    <input type="radio" name="option" id="a"><label for="a">option1</label>
+                </div>
+                <div class="question">
+                    <input type="radio" name="option" id="b"><label for="b">option2</label>
+                </div>
+                <div class="question">
+                    <input type="radio" name="option" id="c"><label for="c">option3</label>
+                </div>
+                <div class="question">
+                     <input type="radio" name="option" id="d"><label for="d">option4</label>
+                </div>
+                <button class="submitButton" type="button" onclick="next()">Submit</button>
+            </form>
+    </div>
+</body>
+</html>

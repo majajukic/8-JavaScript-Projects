@@ -1,0 +1,148 @@
+/*Root*/
+
+:root {
+    --white: #fff;
+    --tope: #F74231;
+    --salmon: #FF9B7B;
+    --paper: #fffbb5;
+
+    --topeMonitor: #ff6a5d;
+    --salmonMonitor: #fdb39a;
+    --paperMonitor: #fffdd6;
+}
+
+/*General*/
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(90deg, var(--tope) 50%, var(--salmon)  50%);
+}
+
+h1 {
+    text-align: center;
+    color: var(--tope);
+    margin: 0 auto 1em auto;
+    font-weight: lighter;
+    font-size: 2.25rem;
+}
+
+i {
+    margin-top: 0.2em;
+}
+
+input[type=text] {
+    height: 25px;
+    border: 2px solid var(--salmon);
+    width: 70%;
+}
+
+input[type=text]:focus {
+    border: 2px solid var(--tope);
+    outline: none;
+}
+
+li {
+    color: var(--tope);
+    font-weight: bold;
+    cursor:initial;
+    font-size: 1.25rem;
+}
+
+/*Layout*/
+
+.container {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 10em 30em;
+    height: auto;
+    padding: 2em;
+    background-color: var(--paper);
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+/*Buttons*/
+
+.add-item-btn {
+    width: 25%;
+    border: none;
+    background-color: var(--tope);
+    color: var(--white);
+    height: auto;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5em;
+    border-radius: 25px;
+    margin-left: 0.5em;
+}
+
+.add-item-btn:hover {
+    background-color: var(--salmon);
+}
+
+.remove-item-btn {
+    border: none;
+    border-radius: 25px;
+    background-color: var(--tope);
+    color: var(--white);
+    cursor: pointer;
+    width: 25px;
+    height: auto;
+    padding: 0.25em;
+    margin-right: 3.25em;
+    
+}
+
+.remove-item-btn:hover {
+    background-color: var(--salmon);
+}
+
+@media screen and (max-width: 657px) {
+    .container {
+        width: 70%;
+        margin: 10em auto;
+    }
+
+    .add-item-btn {
+        width: 20%;
+        font-size: 0.85rem;
+        margin-left: 1em;
+        
+    }
+
+    .remove-item-btn {
+        margin-right: 1.75em;
+    }
+    
+}
+
+@media screen and (min-width: 1900px) {
+    .container {
+        margin-left: 40em;
+        margin-top: 15em;
+    }
+
+    body {
+        background: linear-gradient(90deg, var(--topeMonitor) 50%, var(--salmonMonitor)  50%);
+    }
+
+    .add-item-btn {
+        background-color: var(--topeMonitor);
+    }
+
+    .container {
+        background-color: var(--paperMonitor);
+    }
+}

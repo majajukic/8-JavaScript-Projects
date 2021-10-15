@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" async></script>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400&display=swap" rel="stylesheet">
+    <!--FontAwesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+       <div class="header">
+           <div class="password">
+               <span id="pw"></span>
+               <i id="copy" class="fas fa-copy"></i>
+           </div>
+       </div> 
+       <div class="pw-body">
+           <div class="form-option">
+               <label for="len">Password Length</label>
+               <input id="len" type="number" min="2" max="30" />
+           </div>
+           <div class="form-option">
+            <label for="upper">Contain Uppercase Letters</label>
+            <input id="upper" type="checkbox" />
+        </div>
+        <div class="form-option">
+            <label for="lower">Contain Lowercase Letters</label>
+            <input id="lower" type="checkbox" />
+        </div>
+        <div class="form-option">
+            <label for="number">Contain Numbers</label>
+            <input id="number" type="checkbox"/>
+        </div>
+        <div class="form-option">
+            <label for="symbol">Contain Symbols</label>
+            <input id="symbol" type="checkbox"/>
+        </div>
+        <button class="generate">Generate Password</button>
+       </div>
+    </div>
+</body>
+</html>

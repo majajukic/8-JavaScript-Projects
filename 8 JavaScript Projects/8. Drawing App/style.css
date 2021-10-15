@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+}
+
+canvas {
+    background-color: beige;
+    border: 1px solid;
+    margin: auto;
+}
+
+i {
+    padding: 0.3125em;
+}
+
+a {
+    display: inline-block;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 0.3125em 0.625em;
+    border-radius: 100px;
+    text-decoration: none;
+    margin-left: 0.5em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.pen-tools {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 60%;
+    margin: auto;
+}
+
+.fa-refresh {
+    margin-left: 0.625em;
+    background-color: tomato;
+    padding: 0.625em;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+}
+
+.fa-refresh:hover {
+    background-color:salmon;
+}
+
+/* .pen-size {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 0.3125em;
+} */
+
+.board {
+    width: 50%;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.drawing-colors {
+    display: flex;
+    margin-bottom:  0.625em;
+}
+
+.color-circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-left: 0.3125em;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.color-circle:nth-child(1) {
+    background-color:hotpink;
+}
+.color-circle:nth-child(2) {
+    background-color:orange;
+}
+.color-circle:nth-child(3) {
+    background-color:red;
+}
+.color-circle:nth-child(4) {
+    background-color:yellow;
+}
+.color-circle:nth-child(5) {
+    background-color:black;
+}
+.color-circle:nth-child(6) {
+    background-color:blue;
+}
+.color-circle:nth-child(7) {
+    background-color:white;
+}
+.color-circle:nth-child(8) {
+    background-color:green;
+}
+
+.active {
+    transform: scale(1.3);
+}
